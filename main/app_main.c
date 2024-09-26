@@ -19,6 +19,9 @@
 #include <esp_event.h>
 #include <nvs_flash.h>
 
+#include "driver/gpio.h"
+#include "esp_rom_sys.h"
+
 #include <wifi_provisioning/manager.h>
 
 #ifdef CONFIG_EXAMPLE_PROV_TRANSPORT_BLE
@@ -357,6 +360,23 @@ void app_main(void)
 
 #endif
     /* If device is not yet provisioned start provisioning service */
+    
+    gpio_set_direction(GPIO_NUM_23, GPIO_MODE_INPUT);
+    if(gpio_get_level(GPIO_NUM_23) == 0)
+    {
+        esp_rom_delay_us(100000); // delay 0.1 sec
+        if(gpio_get_level(GPIO_NUM_23) == 0)
+        {
+            ESP_LOGI(TAG, "Button pressed");
+            provisioned = false;
+        }
+        else
+        {
+            ESP_LOGI(TAG, "Button not pressed");
+            provisioned = true;
+        }
+    }
+
     if (!provisioned) {
         ESP_LOGI(TAG, "Starting provisioning");
 

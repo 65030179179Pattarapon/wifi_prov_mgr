@@ -196,3 +196,30 @@ I (83503) app: Hello World!
 I (84503) app: Hello World!
 I (85503) app: Hello World!
 I (86503) app: Hello World!
+
+# ทดลองย่อยที่ 3
+I (4277) app: Connected with IP Address:192.168.1.174
+I (4277) esp_netif_handlers: sta ip: 192.168.1.174, mask: 255.255.255.0, gw: 192.168.1.1
+I (4277) app: Hello World!
+I (5277) app: Hello World!
+I (6277) app: Hello World!
+I (7277) app: Hello World!
+I (8277) app: Hello World!
+I (9187) wifi:<ba-add>idx:0 (ifx:0, 30:0a:c5:9e:94:9f), tid:0, ssn:4, winSize:64
+I (9277) app: Hello World!
+I (10277) app: Hello World!
+I (11277) app: Hello World!
+I (12277) app: Hello World!
+I (13277) app: Hello World!
+I (14277) app: Hello World!
+I (15277) app: Hello World!
+I (16277) app: Hello World!
+I (16457) wifi:<ba-add>idx:1 (ifx:0, 30:0a:c5:9e:94:9f), tid:6, ssn:0, winSize:64
+I (17277) app: Hello World!
+I (18277) app: Hello World!
+I (19277) app: Hello World!
+I (20277) app: Hello World!
+I (21277) app: Hello World!
+I (22277) app: Hello World!
+I (23277) app: Hello World!
+I (24277) app: Hello World!
